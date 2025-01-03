@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SchoolLP-Dashboard</title>
+        <!-- Se añaden los links de los estilos css de las librerias y el css de la pagina que estamos desarrollando -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="wrapper-protected">
+            <aside>
+                <header>
+                    <h1 class="logo">SchoolLP</h1>
+                </header>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a class="boton-menu" href="./index.html"><i class="bi bi-microsoft"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="boton-menu" href="./tasks.html"><i class="bi bi-card-list"></i> Tasks</a>
+                        </li>
+                        <li>
+                            <a class="boton-menu" href="./settings.html"><i class="bi bi-gear-fill"></i> Settings</a>
+                        </li>
+                        <li>
+                            <button id='btn-logout' class="boton-menu"><i class="bi bi-upload"></i> Logout</button>
+                        </li>
+                    </ul>
+                </nav>
+                <footer>
+                    <p class="texto-footer">© INGLAB 2024</p>
+                </footer>
+            </aside>
+            <main>
+                <h2 class="menu-title">Dashboard</h2>
+                <div id="contenedor-dashboard" class="contenedor-dashboard">
+                <!--Llenar con JS los datos del dashboard-->
+                    <div id='usuario' class="usuario">
+                        <h3> Usuario </h3>
+                    </div>
+                    <div class="usuario-cursos">
+                        <div id='cursos' class="cursos">
+                            <h3> Cursos Matriculados </h3>
+                        </div>
+                        <div id='notas' class="notas">
+                            <h3> Notas Finales </h3>
+                        </div>    
+                    </div>
+                    <p class="promedio"> Promedio: </p>
+                </div>
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="module" src="./js/globalVariables.js" charset="utf-8"></script>
+        <script type="module" src="./js/auth.js" charset="utf-8"></script>
+        <script type="module" src="./js/menu.js" charset="utf-8"></script>
+        <script type="module" src="./js/main.js" charset="utf-8"></script>
+    </body>
+<html>

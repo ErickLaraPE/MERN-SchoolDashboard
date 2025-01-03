@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SchoolLP-Login</title>
+        <!-- Se añaden los links de los estilos css de las librerias y el css de la pagina que estamos desarrollando -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="wrapper-auth-login">
+            <main class="cuadro-login">
+                <h1 class="title-auth">SchoolLP - Login</h1>
+                <div id='alerta' class="alerta">
+                    <!-- Se llena el mensaje de la alerta con JS-->
+                </div>
+                <div class="datos-container">
+                <div class="cuadro-datos">
+                    <span class="icon">
+                        <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input id='username' type="text"/>
+                    <label>Username</label>
+                </div>
+                <div class="cuadro-datos">
+                    <span class="icon">
+                        <i class="bi bi-lock-fill"></i>
+                    </span>
+                    <input id='password' type="password"/>
+                    <label>Password</label>
+                </div>
+                <div class="boton-auth-contenedor">
+                    <button id="btnLogin" class='boton-auth' type="button">Ingresar</button>
+                </div>
+                <a class="enlace-login" href="./register.html">¿Aun no registrado? Ingrese aqui</a>
+                </div>
+            </main>
+        </div>
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="module" src="./js/globalVariables.js" charset="utf-8"></script>
+        <script type="module" src="./js/login.js" charset="utf-8"></script>
+    </body>
+<html>
